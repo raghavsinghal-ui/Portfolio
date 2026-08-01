@@ -89,7 +89,47 @@ width: 40px;
     width: 100%;
     display: flex;
     flex-direction:row;
-        justify-content:space-around;
+    justify-content:space-around;
+}
 
+@media (max-width: 900px) {
+    .homeLeft {
+        max-width: 100%;
+        margin-top: 0;
+        align-items: flex-start;
+    }
 
+    .homeLeft h1:first-child,
+    .homeLeft h1:last-child {
+        font-size: 42px;
+    }
+
+    .homeLeft p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .techstack {
+        justify-content: flex-start;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .homeLeft h1:first-child,
+    .homeLeft h1:last-child {
+        font-size: 34px;
+    }
+
+    .homeLeft p {
+        margin-top: 16px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .svglogo {
+        height: 34px;
+        width: 34px;
+    }
 }

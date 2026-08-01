@@ -2,7 +2,8 @@
     width:min(1400px,92%);
     min-height:90vh;
 
-    margin:100px auto;
+    margin:140px auto 120px;
+    padding-top: 40px;
 
     display:flex;
     gap:40px;
@@ -711,4 +712,117 @@ display:grid;
 .progressFill{
 
     transition:width .6s ease;
+}
+
+@media (max-width: 900px) {
+    .about {
+        flex-direction: column;
+        gap: 24px;
+        margin: 70px auto 40px;
+    }
+
+    .aboutLeft,
+    .aboutRight {
+        padding: 20px;
+    }
+
+    .ableftup {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "education"
+            "personal"
+            "tech";
+    }
+
+    .aboutRight {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .profileImage {
+        width: 120px;
+        height: 120px;
+    }
+
+    .nameAbout {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        width: min(95%, 1400px);
+        gap: 18px;
+        margin: 56px auto 24px;
+    }
+
+    .aboutLeft,
+    .aboutRight {
+        padding: 16px;
+    }
+
+    .aboutRight {
+        order: -1;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nameAbout {
+        font-size: 1.8rem;
+    }
+
+    .designation {
+        font-size: 1rem;
+    }
+
+    .aboutText p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .eduRow,
+    .personalRow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cgpaCard {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .timeline {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 12px;
+        padding-left: 8px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .step {
+        width: 100%;
+        text-align: left;
+        padding-left: 12px;
+        border-left: 2px solid rgba(59, 130, 246, 0.35);
+    }
+
+    .circle {
+        margin: 0 0 10px 0;
+    }
+
+    .step h3 {
+        margin-top: 0;
+    }
+
+    .step p {
+        margin-top: 6px;
+    }
+
+    .step span {
+        margin-top: 8px;
+    }
 }

@@ -2,7 +2,7 @@
     width:min(1120px,92%);
     min-height:0;
     flex:1;
-    margin:0 auto 8px;
+    margin:140px auto 24px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -156,4 +156,110 @@
     transform:
         rotate(270deg)
         translateY(-230px);
-} 
+}
+
+@media (max-width: 900px) {
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        padding: 20px 0 40px;
+    }
+
+    .homeRight {
+        min-height: 280px;
+        width: 100%;
+    }
+
+    .homeRight::before {
+        width: 360px;
+        height: 360px;
+    }
+
+    .Avatar {
+        width: 280px;
+        max-width: 85%;
+        transform: translate(-50%, -50%);
+    }
+
+    .orbit,
+    .orbitContainer {
+        width: 420px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 600px) {
+    .home {
+        width: min(94%, 1120px);
+        gap: 16px;
+        padding: 12px 0 28px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homeLeft {
+        width: 100%;
+        text-align: left;
+    }
+
+    .homeRight {
+        min-height: 220px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+        order: 2;
+    }
+
+    .homeRight::before {
+        width: 220px;
+        height: 220px;
+    }
+
+    .Avatar {
+        width: 190px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+    }
+
+    .orbit,
+    .orbitContainer {
+        width: 240px;
+        height: 240px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    .logosvg {
+        width: 30px;
+        height: 30px;
+        margin-left: -15px;
+        margin-top: -15px;
+        opacity: 0.9;
+    }
+
+    .react,
+    .TS,
+    .node,
+    .mongo {
+        transform: translateY(-90px);
+    }
+
+    .TS {
+        transform: rotate(90deg) translateY(-90px);
+    }
+
+    .node {
+        transform: rotate(180deg) translateY(-90px);
+    }
+
+    .mongo {
+        transform: rotate(270deg) translateY(-90px);
+    }
+}

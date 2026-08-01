@@ -127,3 +127,51 @@
 
     background:rgba(255,255,255,.08);
 }
+
+@media (max-width: 900px) {
+    .bottom {
+        width: min(94%, 1200px);
+        height: auto;
+        margin: 40px auto 24px;
+        padding: 20px 12px;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .stat {
+        width: calc(50% - 8px);
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .divider {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px;
+    }
+
+    .stat {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .iconBox {
+        width: 56px;
+        height: 56px;
+    }
+
+    .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .text p {
+        font-size: 0.92rem;
+        margin-top: 4px;
+    }
+}
