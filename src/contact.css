@@ -1,0 +1,145 @@
+.contactContainer {
+    width: 70%;
+    margin: 80px auto;
+    padding: 40px;
+
+    background: rgba(12, 18, 35, 0.75);
+    backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(59, 130, 246, 0.35);
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 20px rgba(59, 130, 246, 0.2),
+        0 0 50px rgba(59, 130, 246, 0.08),
+        inset 0 0 20px rgba(59, 130, 246, 0.05);
+}
+
+.contactHeading {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contactSubHeading {
+    text-align: center;
+    color: #9CA3AF;
+    font-size: 1rem;
+    margin-bottom: 45px;
+    line-height: 1.6;
+}
+
+.contactCards {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.contactCard {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    padding: 22px 28px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+
+    transition: all .35s ease;
+
+    cursor: pointer;
+}
+
+.contactCard:hover {
+    transform: scale(1.03);
+
+    border-color: #3B82F6;
+
+    box-shadow:
+        0 0 15px rgba(59, 130, 246, 0.45),
+        0 0 35px rgba(59, 130, 246, 0.18);
+}
+
+.contactIcon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #3B82F6;
+
+    border-radius: 18px;
+
+    background: rgba(59, 130, 246, 0.08);
+
+    flex-shrink: 0;
+
+    transition: all .35s ease;
+}
+
+.contactCard:hover .contactIcon {
+    background: rgba(59, 130, 246, 0.15);
+
+    transform: scale(1.15) rotate(-8deg);
+
+    box-shadow: 0 0 18px rgba(59, 130, 246, .5);
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contactTitle {
+    color: #9CA3AF;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contactValue {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    transition: color .3s;
+}
+
+.contactValue:hover {
+    color: #60A5FA;
+}
+
+@media (max-width: 900px) {
+
+    .contactContainer {
+        width: 90%;
+        padding: 28px;
+    }
+
+    .contactCard {
+        padding: 18px;
+        gap: 18px;
+    }
+
+    .contactIcon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .contactHeading {
+        font-size: 2rem;
+    }
+
+    .contactValue {
+        font-size: 1rem;
+    }
+}

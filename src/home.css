@@ -1,0 +1,159 @@
+.home{
+    width:min(1120px,92%);
+    min-height:0;
+    flex:1;
+    margin:0 auto 8px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    position:relative;
+    z-index:0;
+}
+/* .content{
+    flex:1;
+    overflow-y:auto;
+      overflow-x: hidden;
+} */
+
+    
+.homeLeft{
+    flex:1;
+}
+
+.homeRight{
+    flex:1;
+    min-height:420px;
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/* .Avatar{
+    width:550px;
+    object-fit:contain;
+    background:transparent;
+    filter:drop-shadow(0 0 40px rgba(59,130,246,.8));
+} */
+
+
+.homeRight::before{
+
+    content:"";
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    width:620px;
+    height:620px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+        circle,
+        rgba(59,130,246,.65) 0%,
+        rgba(59,130,246,.22) 40%,
+        transparent 70%
+    );
+
+    filter:blur(160px);
+    opacity: 1;
+    z-index:-1;
+}
+.Avatar{
+    -webkit-mask-image:
+        linear-gradient(
+            to bottom,
+            black 75%,
+            transparent 100%
+        );
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            black 75%,
+            transparent 100%
+        );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    max-width: 88%;
+    transform: translate(-50%, -55%);
+    z-index: 2;
+    opacity:1;
+    transition:opacity 0.4s ease;
+}
+
+.orbit{
+
+    position:absolute;
+
+    width:650px;
+    height:650px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    pointer-events:none;
+
+    /* z-index:1; */
+}
+
+.orbitContainer{
+    position:absolute;
+
+    width:650px;
+    height:650px;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+    z-index: 0;
+}
+.logosvg{
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    width:45px;
+    height:45px;
+    object-fit: contain;
+    margin-left:-22px;
+    margin-top:-22px;
+    transform-origin: center;
+}
+
+.logosvg img{
+    width:100%;
+    height:100%;
+}
+
+.react{
+    transform:
+        rotate(0deg)
+        translateY(-230px);
+}
+.TS{
+    transform:
+        rotate(90deg)
+        translateY(-230px);
+}
+.node{
+    transform:
+        rotate(180deg)
+        translateY(-230px);
+}
+.mongo{
+    transform:
+        rotate(270deg)
+        translateY(-230px);
+} 

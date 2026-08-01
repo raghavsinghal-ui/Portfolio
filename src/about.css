@@ -1,0 +1,714 @@
+.about{
+    width:min(1400px,92%);
+    min-height:90vh;
+
+    margin:100px auto;
+
+    display:flex;
+    gap:40px;
+
+    align-items:stretch;
+}
+
+.aboutLeft{
+    flex:2;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:22px;
+
+    padding:22px;
+
+    border-radius:24px;
+
+    background:rgba(12,18,35,.72);
+    border:1px solid rgba(80,140,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+        0 15px 50px rgba(0,0,0,.35),
+        inset 0 0 0 1px rgba(255,255,255,.04);
+}
+
+.ableftup{
+    flex:4;
+display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    grid-template-areas:
+        "education personal"
+        "tech tech";
+
+    gap:24px;
+
+    height:100%;
+   
+    border-radius:18px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.ableftdown{
+    flex:1;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.aboutRight{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:rgba(12,18,35,.72);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(80,140,255,.18);
+
+    box-shadow:
+        0 15px 50px rgba(0,0,0,.35),
+        inset 0 0 0 1px rgba(255,255,255,.04);
+
+    transition:.35s;
+}
+
+.aboutLeft:hover,
+.aboutRight:hover{
+    transform:translateY(-6px);
+    border-color:#3b82f6;
+}
+
+.profileImage{
+    width:145px;
+    height:145px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    flex-shrink:0;
+
+    border:4px solid #3b82f6;
+
+    box-shadow:
+        0 0 18px rgba(59,130,246,.45),
+        0 0 40px rgba(59,130,246,.18);
+
+    margin-bottom:25px;
+}
+.profileImage:hover{
+    scale: 1.3;
+    transition: .5s ease;
+}
+.profileImage img{
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+    object-position:center 18%;
+}
+
+
+.nameAbout{
+
+    margin:0;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:3.1rem;
+
+    font-weight:700;
+
+    line-height:1.05;
+
+    letter-spacing:-1.5px;
+
+    color:#ffffff;
+
+    text-shadow:
+        0 0 10px rgba(59,130,246,.15);
+}
+
+.designation{
+
+    margin:12px 0 0;
+
+    font-size:1.15rem;
+
+    font-weight:500;
+
+    color:#4F9DFF;
+
+    letter-spacing:.3px;
+
+    text-shadow:
+        0 0 10px rgba(79,157,255,.25);
+}
+.aboutText{
+    width:100%;
+
+    margin-top:28px;
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.aboutText p{
+    margin:0;
+
+    color:#cbd5e1;
+
+    font-size:1.02rem;
+
+    line-height:1.85;
+
+    font-weight:400;
+
+    letter-spacing:.2px;
+
+    font-family:"Inter",sans-serif;
+}
+
+.aboutText span{
+    color:#60a5fa;
+
+    font-weight:600;
+}
+.Education{
+    grid-area:education;
+
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+
+    padding:25px;
+}
+
+.personals{
+    grid-area:personal;
+
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+
+    padding:25px;
+}
+
+.techStack{
+    grid-area:tech;
+
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+
+    padding:25px;
+}
+.journey{
+
+    width:100%;
+}
+
+.journeyTitle{
+
+    color:white;
+
+    font-size:1.6rem;
+
+    margin-bottom:45px;
+}
+
+.timeline{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-top:20px;
+}
+
+.line{
+
+    position:absolute;
+
+    top:18px;
+
+    left:6%;
+
+    width:88%;
+
+    height:3px;
+
+    background:rgba(59,130,246,.35);
+
+    border-radius:50px;
+}
+
+.step{
+
+    position:relative;
+
+    width:22%;
+
+    z-index:2;
+
+    text-align:center;
+}
+
+.circle{
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    background:#2563eb;
+
+    border:4px solid #0b1220;
+
+    box-shadow:
+        0 0 15px #3b82f6;
+}
+
+.future{
+
+    background:#10b981;
+
+    box-shadow:
+        0 0 18px #10b981;
+}
+
+.step h3{
+
+    margin-top:18px;
+
+    color:#60a5fa;
+
+    font-size:1.2rem;
+}
+
+.step p{
+
+    color:white;
+
+    margin-top:10px;
+
+    font-size:1rem;
+
+    font-weight:600;
+}
+
+.step span{
+
+    display:block;
+
+    margin-top:12px;
+
+    color:#b8c5dc;
+
+    font-size:.9rem;
+
+    line-height:1.6;
+}
+.Education {
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.08);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.eduHeading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 700;
+
+    margin-bottom: 22px;
+}
+
+.eduHeading svg {
+    color: #3b82f6;
+}
+
+.eduContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.eduRow {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.eduIcon {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 14px;
+
+    background: rgba(59,130,246,.15);
+    color: #3b82f6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.eduText h4 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.eduText p {
+    color: #60a5fa;
+    font-size: .92rem;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.eduText span {
+    color: #b5bfd2;
+    font-size: .88rem;
+    line-height: 1.5;
+}
+
+.cgpaCard {
+    margin-top: 22px;
+
+    background: rgba(59,130,246,.08);
+
+    border: 1px solid rgba(59,130,246,.25);
+
+    border-radius: 14px;
+
+    padding: 15px 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cgpaLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    font-weight: 600;
+}
+
+.cgpaLeft svg {
+    color: #22c55e;
+}
+
+.cgpaCard h2 {
+    color: #3b82f6;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cgpaCard h2 span {
+    font-size: 1rem;
+    color: #94a3b8;
+}
+.personals{
+    width:100%;
+    height:100%;
+    padding:18px;
+    border-radius:18px;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+
+    display:flex;
+    flex-direction:column;
+}
+
+.personalHeading{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    color:white;
+    font-size:1.15rem;
+    font-weight:700;
+
+    margin-bottom:22px;
+}
+
+.personalHeading svg{
+    color:#3b82f6;
+}
+
+.personalContent{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.personalRow{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.personalIcon{
+    width:46px;
+    height:46px;
+
+    border-radius:12px;
+
+    background:rgba(59,130,246,.15);
+    color:#3b82f6;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+}
+
+.personalText h4{
+    color:white;
+    font-size:.95rem;
+    font-weight:600;
+    margin-bottom:4px;
+}
+
+.personalText p{
+    color:#b5bfd2;
+    font-size:.88rem;
+    line-height:1.4;
+}
+.techStack{
+    width:100%;
+    height:100%;
+
+    padding:22px;
+
+    border-radius:18px;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+
+    display:flex;
+    flex-direction:column;
+}
+
+.stackHeading{
+    color:#fff;
+    font-size:1.2rem;
+    font-weight:700;
+
+    margin-bottom:18px;
+}
+
+.stackRow{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+
+    gap:30px;
+
+    padding:14px 0;
+}
+
+.stackRow h4{
+    width:120px;
+
+    color:#60a5fa;
+
+    font-size:1rem;
+    font-weight:600;
+
+    flex-shrink:0;
+}
+
+.stackCapsules{
+    flex:1;
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.stackCapsules span{
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:#1d2740;
+
+    border:1px solid rgba(59,130,246,.25);
+
+    color:#dbeafe;
+
+    font-size:.8rem;
+    font-weight:500;
+
+    transition:.25s ease;
+}
+
+.stackCapsules span:hover{
+
+    background:#2563eb;
+    border-color:#2563eb;
+
+    color:white;
+
+    transform:translateY(-2px);
+}
+
+.stackDivider{
+
+    width:100%;
+    height:1px;
+
+    background:rgba(255,255,255,.07);
+}
+.divider{
+
+    width:100%;
+    height:1px;
+
+    background:rgba(255,255,255,.08);
+
+    margin:24px 0;
+}
+
+.internship{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:8px;
+
+    color:#22c55e;
+
+    font-weight:600;
+
+    font-size:2rem;
+}
+
+.internship svg{
+
+    color:#22c55e;
+}
+
+.skill{
+
+    width:100%;
+
+    margin-bottom:20px;
+}
+
+.skillInfo{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:8px;
+
+    color:white;
+
+    font-size:.9rem;
+}
+
+.skillTitle{
+
+    display:flex;
+    align-items:center;
+
+    gap:8px;
+}
+
+.skillTitle svg{
+
+    color:#60a5fa;
+}
+
+.progress{
+
+    width:100%;
+
+    height:8px;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    background:#1f2937;
+}
+
+.progressFill{
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:linear-gradient(90deg,#2563eb,#60a5fa);
+}
+
+.backend{
+
+    width:90%;
+}
+
+.frontend{
+
+    width:70%;
+}
+
+.dsa{
+
+    width:80%;
+}
+
+.progressFill{
+
+    transition:width .6s ease;
+}
