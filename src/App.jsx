@@ -24,6 +24,7 @@ import {
   
 
 } from "lucide-react";
+
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import avatar from "./frames/upd.png";
 import profile from "./frames/profile.jfif";
@@ -40,6 +41,7 @@ import "./home.css"
 import "./homeleft.css"
 import "./bottombar.css"
 import "./contact.css"
+import Project from "./project.jsx"
 function Landing({children}){
   
 
@@ -809,7 +811,6 @@ function ContactCard() {
   );
 }
 
-function Project(){}
 function App() {
   
   return (<> <BrowserRouter><Landing>

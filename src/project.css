@@ -1,0 +1,154 @@
+/* ================= PROJECT CONTAINER ================= */
+
+.projectContainer{
+    width:90%;
+    height:75vh;
+ margin: 150px auto 100px;
+  
+
+    padding:24px;
+
+    display:grid;
+    gap:24px;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    border-radius:24px;
+
+    background:rgba(10,18,35,.55);
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(59,130,246,.25);
+
+    box-shadow:
+        0 0 30px rgba(59,130,246,.15),
+        inset 0 0 15px rgba(59,130,246,.08);
+
+    scrollbar-width:none;
+}
+
+.projectContainer::-webkit-scrollbar{
+    display:none;
+}
+
+/* ================= 1 PROJECT ================= */
+
+.projectContainer.single{
+    grid-template-columns:1fr;
+}
+
+/* ================= 2 PROJECTS ================= */
+
+.projectContainer.double{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* ================= 3 OR MORE ================= */
+
+.projectContainer.special{
+    grid-template-columns:repeat(4,1fr);
+}
+
+/* ================= PROJECT CARD ================= */
+
+.projectCard{
+
+    height:220px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    background:rgba(15,25,45,.75);
+
+    border:1px solid rgba(59,130,246,.35);
+
+    transition:all .35s ease;
+
+    overflow:hidden;
+
+    position:relative;
+}
+
+/* Blue glow */
+
+.projectCard::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:inherit;
+
+    box-shadow:inset 0 0 25px rgba(59,130,246,.08);
+
+    pointer-events:none;
+}
+
+/* Hover */
+
+.projectCard:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgb(59,130,246);
+
+    box-shadow:
+        0 0 18px rgba(59,130,246,.35),
+        0 0 40px rgba(59,130,246,.15);
+}
+
+/* Title */
+
+.projectCard h2{
+
+    color:white;
+
+    font-size:1.3rem;
+
+    font-weight:600;
+
+    text-align:center;
+
+    padding:20px;
+
+    z-index:1;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1200px){
+
+    .projectContainer.special{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:900px){
+
+    .projectContainer.special,
+    .projectContainer.double{
+
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    .projectContainer.single,
+    .projectContainer.double,
+    .projectContainer.special{
+
+        grid-template-columns:1fr;
+    }
+
+}
