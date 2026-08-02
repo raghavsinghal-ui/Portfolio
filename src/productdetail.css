@@ -357,3 +357,57 @@
 
     right:40px;
 }
+
+@media (max-width: 768px){
+
+    .projectDetails{
+        padding:16px;
+    }
+
+    .detailsContainer{
+        flex-direction:column;
+        gap:16px;
+        height:auto;
+    }
+
+    .detailsRight{
+        order:-1;
+        width:100%;
+        padding:16px;
+    }
+
+    .detailsLeft{
+        width:100%;
+    }
+
+    .leftScroll{
+        padding:24px;
+    }
+
+    .leftScroll h1{
+        font-size:28px;
+    }
+
+    .imageBox{
+        height:240px;
+    }
+
+    .galleryImage{
+        width:92vw;
+        max-height:75vh;
+    }
+
+    .galleryArrow{
+        width:46px;
+        height:46px;
+        font-size:24px;
+    }
+
+    .leftArrow{
+        left:16px;
+    }
+
+    .rightArrow{
+        right:16px;
+    }
+}
