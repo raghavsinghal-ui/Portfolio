@@ -360,7 +360,7 @@ return (<div className='Nav'>
      <li>  <NavLink to="/project">Project</NavLink></li>
 </ul>
 <button className="resume-butn" onClick={() =>
-    window.open("../public/resume.pdf", "_blank")}>
+    window.open("/project/resume.pdf", "_blank")}>
     <Download size={18} />
     <span>Download Resume</span>
     <div className="divider"></div>

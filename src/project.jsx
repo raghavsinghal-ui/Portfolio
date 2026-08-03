@@ -41,7 +41,7 @@ const projects = [
 
   images: [
    
-  "../public/project/event/eventserver.png"
+  "/project/event/eventserver.png"
   
   ]
 },
@@ -74,8 +74,8 @@ button:{
    value : "https://github.com/yourusername/portfolio"},
 
     images: [
-      "../public/project/pf.png",
-       "../public/project/pfc.png",
+      "/project/pf.png",
+       "/project/pfc.png",
     ]
   },
   {
@@ -108,7 +108,7 @@ button:{
    value : "https://leetcode.com/u/Uk1uBzIXht/"},
 
   images: [
-    "../public/project/lc.png"
+    "/project/lc.png"
   ]
 }
 
