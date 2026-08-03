@@ -334,6 +334,9 @@ return (<diV style={{width:"70vw",height:"60vh"}} className="home">
 }
 function Navbar(){
  const text = "Raghav Singhal";
+ const handleDownload = () => {
+  window.location.href = "/project/resume.pdf";
+};
 return (<div className='Nav'>
    <div style={{display:"flex",justifyContent:"space-evenly", alignItems:"center", width:"20%"}}>
     <span className="logo"> RS</span>  
@@ -359,8 +362,7 @@ return (<div className='Nav'>
       <li> <NavLink to="/contact">contact</NavLink></li>
      <li>  <NavLink to="/project">Project</NavLink></li>
 </ul>
-<button className="resume-butn" onClick={() =>
-    window.open("/project/resume.pdf", "_blank")}>
+<button className="resume-butn"onClick={handleDownload}>
     <Download size={18} />
     <span>Download Resume</span>
     <div className="divider"></div>
